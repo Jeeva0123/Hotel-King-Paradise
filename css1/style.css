@@ -63,14 +63,14 @@ template {
   display: none;
 }
 
-a {
+/*a {
   background-color: transparent;
-}
-
+}*/
+/*
 a:active,
 a:hover {
   outline: 0;
-}
+}*/
 
 abbr[title] {
   border-bottom: 1px dotted;
@@ -7344,7 +7344,7 @@ body {
   line-height: 1.8;
   font-size: 16px;
   background: #fff;
-  color: #848484;
+  color: #373535;
   font-weight: 300;
   overflow-x: hidden;
 }
@@ -7366,7 +7366,7 @@ a:hover {
 p, ul, ol {
   margin-bottom: 1.5em;
   font-size: 18px;
-  color: #848484;
+  color: #373535;
   font-weight: 300;
   font-family: "Open Sans", Arial, serif;
 }
@@ -7682,7 +7682,7 @@ figure {
   border-bottom: none !important;
 }
 .sf-menu a:hover, .sf-menu a:focus, .sf-menu a.active {
-  color: #fff !important;
+  color: #fff ;
 }
 
 .sf-menu li,
@@ -8996,7 +8996,7 @@ input[type="text"] {
   top: 0;
   bottom: 0;
   z-index: 99;
-  background: #222;
+  background: #fff;
   right: -240px;
   width: 240px;
   padding: 20px;
@@ -9062,7 +9062,7 @@ input[type="text"] {
   font: bold 14px/.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
-  background: #000;
+ 
   transition: all .2s ease-out;
 }
 .fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after {

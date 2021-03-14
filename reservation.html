@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">    
 	<!-- Site CSS -->
     <link rel="stylesheet" href="css/style.css">    
+	<!-- Pickadate CSS -->
+    <link rel="stylesheet" href="css/classic.css">    
+	<link rel="stylesheet" href="css/classic.date.css">    
+	<link rel="stylesheet" href="css/classic.time.css">    
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Custom CSS -->
@@ -30,7 +34,7 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-<!-- css1 -->
+ <!-- css1 -->
 <!-- Stylesheets -->
 	<!-- Dropdown Menu -->
 	<link rel="stylesheet" href="css1/superfish.css">
@@ -84,8 +88,8 @@
 							<li><a  style="color:black" href="menu.html" class="fh5co-sub-ddown">Facilities</a></li>
 							<li><a  style="color:black" href="about.html">About</a></li>
 							<li><a  style="color:black" href="gallery.html">Gallery</a></li>
-							<li><a  style="color:black" href="reservation.html">Reservaton</a></li>
-							<li><a  style="color:black" class="active" href="contact.html"><b>Contact</b></a></li>
+							<li><a  style="color:black" class="active" href="reservation.html"><b>Reservaton</b></a></li>
+							<li><a  style="color:black" href="contact.html">Contact</a></li>
 
 						</ul>
 					</nav>
@@ -96,101 +100,92 @@
 	</div>
 	<!-- end:fh5co-header -->
 	<br>
-	<!-- Start Contact -->
-	<div class="map-full"></div>
-	<div class="contact-box">
+	
+	<!-- Start Reservation -->
+	<div class="reservation-box">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="heading-title text-center">
-						<!-- <h2>Contact</h2> -->
-						<p>A better way to create a better service is valuable feedback please communicte your to feedback to us </p>
+						<h2>Reservation</h2>
+						<p>To be a part of our family please reserve..</p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-12">
-					<form id="contactForm">
-						<div class="row">
-							<div class="col-md-12">
-								<div class="form-group">
-									<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
-									<div class="help-block with-errors"></div>
-								</div>                                 
-							</div>
-							<div class="col-md-12">
-								<div class="form-group">
-									<input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
-									<div class="help-block with-errors"></div>
-								</div> 
-							</div>
-							<div class="col-md-12">
-								<div class="form-group">
-									<select class="custom-select d-block form-control" id="guest" required data-error="Please Select Person">
-									  <option disabled selected>Please Select Person*</option>
-									  <option value="1">1</option>
-									  <option value="2">2</option>
-									  <option value="3">3</option>
-									  <option value="4">4</option>
-									  <option value="5">5</option>
-									</select>
-									<div class="help-block with-errors"></div>
-								</div> 
-							</div>
-							<div class="col-md-12">
-								<div class="form-group"> 
-									<textarea class="form-control" id="message" placeholder="Your Message" rows="4" data-error="Write your message" required></textarea>
-									<div class="help-block with-errors"></div>
+				<div class="col-lg-12 col-sm-12 col-xs-12">
+					<div class="contact-block">
+						<form id="contactForm">
+							<div class="row">
+								<div class="col-md-6">
+									<h3>Book a table</h3>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input id="input_date" class="datepicker picker__input form-control" name="date" type="text" value="" equired data-error="Please enter Date">
+											<div class="help-block with-errors"></div>
+										</div>                                 
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input id="input_time" class="time form-control picker__input" required data-error="Please enter time">
+											<div class="help-block with-errors"></div>
+										</div>                                 
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<select class="custom-select d-block form-control" id="person" required data-error="Please select Person">
+											  <option disabled selected>Select Person*</option>
+											  <option value="1">1</option>
+											  <option value="2">2</option>
+											  <option value="3">3</option>
+											  <option value="4">4</option>
+											  <option value="5">5</option>
+											  <option value="6">6</option>
+											  <option value="7">7</option>
+											</select>
+											<div class="help-block with-errors"></div>
+										</div> 
+									</div>
 								</div>
-								<div class="submit-button text-center">
-									<button class="btn btn-common" id="submit" type="submit">Send Message</button>
-									<div id="msgSubmit" class="h3 text-center hidden"></div> 
-									<div class="clearfix"></div> 
+								<div class="col-md-6">
+									<h3>Contact Details</h3>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+											<div class="help-block with-errors"></div>
+										</div>                                 
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" placeholder="Your Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
+											<div class="help-block with-errors"></div>
+										</div> 
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<input type="text" placeholder="Your Numbar" id="phone" class="form-control" name="phone" required data-error="Please enter your Numbar">
+											<div class="help-block with-errors"></div>
+										</div> 
+									</div>
 								</div>
-							</div>
-						</div>            
-					</form>
+								<div class="col-md-12">
+									<div class="submit-button text-center">
+										<button class="btn btn-common" id="submit" type="submit">Book Table</button>
+										<div id="msgSubmit" class="h3 text-center hidden"></div> 
+										<div class="clearfix"></div> 
+									</div>
+								</div>
+							</div>            
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- End Contact -->
+	<!-- End Reservation -->
 	
-	<!-- Start Contact info -->
-	<!-- <div class="contact-imfo-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<i class="fa fa-volume-control-phone"></i>
-					<div class="overflow-hidden">
-						<h4>Phone</h4>
-						<p class="lead">
-							+01 123-456-4590
-						</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<i class="fa fa-envelope"></i>
-					<div class="overflow-hidden">
-						<h4>Email</h4>
-						<p class="lead">
-							yourmail@gmail.com
-						</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<i class="fa fa-map-marker"></i>
-					<div class="overflow-hidden">
-						<h4>Location</h4>
-						<p class="lead">
-							800, Lorem Street, US
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	 --><!-- End Contact info -->
+
+	
 	
 	<!-- Start Footer -->
 	<footer class="footer-area bg-f">
@@ -262,7 +257,7 @@
 	<script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>
     <script src="js/custom.js"></script>
-        <!-- js1 -->
+      <!-- js1 -->
     	<!-- Dropdown Menu -->
 	<script src="js1/hoverIntent.js"></script>
 	<script src="js1/superfish.js"></script>
