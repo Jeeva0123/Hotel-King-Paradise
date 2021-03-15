@@ -331,6 +331,7 @@ button:focus{
 }
 .inner-column .btn-outline-new-white{
 	color: #912101;
+	border: 1px solid black;
 }
 .inner-column .btn-outline-new-white:hover{
 	color: #ffffff;
